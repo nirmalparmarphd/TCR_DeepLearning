@@ -1,15 +1,15 @@
 # TCR_DeepLearning
-Artificial Neural Network (ANN) to predict the Thermal Contact Resistance (TCR) in metalic composite pairs with the thermal interface material. 
+Artificial Neural Network (ANN) to predict the Thermal Contact Resistance (TCR) in metallic composite pairs with the thermal interface material. 
 
 # Minimum Working Example
-MWE of ANN model to predict a temperature drop across a metalic composite pair mentioned below4
+MWE of ANN model to predict a temperature drop across a metallic composite pair mentioned below4
 
 ```python:
 ## importing TCR ANN module
 from module import *
 
-## Data preparation
-# Pair Combinations: use appropriate integer to specify the combination
+## Data Preparation
+# Pair Combinations: use the appropriate integer to specify the combination
     # 'Al-Br-Cu' = 1
     # 'Al-Air-Al' = 2
     # 'Al-Air-Cu' = 3
@@ -36,10 +36,10 @@ prediction.wop()
 Example Output
 
 ```
-StandardScaler was fitted with feature names
+StandardScaler was fitted with a feature name
   warnings.warn(
 ----------------------------------------------------------------------
- This is ANN model trained to predict a 'Interfacial Temperature Difference - d(Ti) [C]' and a 'Total Temperature Difference - d(T) [C]' due to the Thermal Contact Resistence (TCR) accros different metalic composite pairs.
+ This is an ANN model trained to predict an 'Interfacial Temperature Difference - d(Ti) [C]' and a 'Total Temperature Difference - d(T) [C]' due to the Thermal Contact Resistance (TCR) across different metallic composite pairs.
 
         # for prediction
         >>> prediction = tcr_prediction(data)
@@ -47,10 +47,10 @@ StandardScaler was fitted with feature names
         # for help
         >>> prediction.help()
 
-        # for prediction at without pressurised condition (wop)
+        # for prediction at without pressurized conditions (wop)
         >>> prediction.wop()
 
-        # for prediction at pressurised condition (wp)
+        # for prediction at pressurized condition (wp)
         >>> prediction.wp()
 
 ----------------------------------------------------------------------
